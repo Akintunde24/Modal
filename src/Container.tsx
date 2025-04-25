@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "./Button";
-import { Modal } from "./modal";
+import { Modal } from "./Modal";
 
 
 export const Container = () => {

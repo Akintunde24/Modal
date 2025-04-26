@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Button } from "./Button";
-import { Modal } from "./modal";
+import { Modal } from "./Modal";
+import { Nav } from "./Nav";
+import { Sidebar } from "./Sidebar";
 
 
 export const Container = () => {
@@ -13,7 +14,8 @@ export const Container = () => {
   return (
     <div>
       <div>
-        <Button handleOpen={handleOpen}/>
+        <Nav />
+        <Sidebar handleOpen={handleOpen} open={showModal}/>
         <Modal open={showModal}/>
       </div>
     </div>

@@ -10,11 +10,16 @@ export const Container = () => {
     setShowModal((modal) => !modal)
   }
 
+  const handleClose = () => {
+    setShowModal(!showModal)
+    console.log("clicked")
+  }
+
   return (
     <div>
       <div>
         <Nav />
-        <Sidebar handleOpen={handleOpen} open={showModal}/>
+        <Sidebar handleOpen={handleOpen} handleClose={handleClose} open={showModal} />
       </div>
     </div>
   );

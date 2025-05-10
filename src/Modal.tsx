@@ -7,7 +7,7 @@ interface Props {
   body: JSX.Element;
 }
 
-export const Modal = ({ open, handleClose, body }: Props) => {
+export const Modal = ({ open, handleClose }: Props) => {
   return (
     <div
       onClick={handleClose}

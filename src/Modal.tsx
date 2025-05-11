@@ -7,7 +7,7 @@ interface Props {
   body: JSX.Element;
 }
 
-export const Modal = ({ open, handleClose }: Props) => {
+export const Modal = ({ open, handleClose, body }: Props) => {
   return (
     <div
       onClick={handleClose}
@@ -55,7 +55,7 @@ export const Modal = ({ open, handleClose }: Props) => {
                   </div>
                 </div>
               </div>
-              <table className="w-full my-5">Hello</table>
+              <table className="w-full my-5">{body}</table>
             </div>
           </div>
         </div>
